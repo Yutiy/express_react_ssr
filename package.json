@@ -1,0 +1,50 @@
+{
+  "name": "express-react-ssr",
+  "version": "1.0.0",
+  "description": "A express-react-ssr project",
+  "author": "yutiy <a494657028@gmail.com>",
+  "private": true,
+  "scripts": {
+    "dev": "npm-run-all --parallel dev:**",
+    "dev:start": "nodemon --watch dist --exec node \"./dist/bundle.js\"",
+    "dev:build:server": "webpack --config ./build/webpack.server.config.js --watch",
+    "dev:build:client": "webpack --config ./build/webpack.client.config.js --watch"
+  },
+  "dependencies": {
+    "axios": "^0.19.2",
+    "express": "^4.17.1",
+    "express-http-proxy": "^1.6.0",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "react-helmet": "^6.0.0",
+    "react-redux": "^7.2.0",
+    "react-router-config": "^5.1.1",
+    "react-router-dom": "^5.1.2",
+    "redux": "^4.0.5",
+    "redux-thunk": "^2.3.0"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.8.4",
+    "@babel/core": "^7.9.0",
+    "@babel/plugin-proposal-class-properties": "^7.8.3",
+    "@babel/plugin-syntax-dynamic-import": "^7.8.3",
+    "@babel/plugin-transform-runtime": "^7.9.0",
+    "@babel/polyfill": "^7.8.7",
+    "@babel/preset-env": "^7.9.5",
+    "@babel/preset-react": "^7.9.4",
+    "@babel/runtime-corejs3": "^7.9.2",
+    "babel-loader": "^8.1.0",
+    "core-js": "^3.6.5",
+    "cross-env": "^7.0.2",
+    "css-loader": "^3.5.2",
+    "isomorphic-style-loader": "^5.1.0",
+    "nodemon": "^2.0.3",
+    "npm-run-all": "^4.1.5",
+    "react-hot-loader": "^4.12.20",
+    "style-loader": "^1.1.4",
+    "webpack": "^4.42.1",
+    "webpack-cli": "^3.3.11",
+    "webpack-dev-server": "^3.10.3",
+    "webpack-node-externals": "^1.7.2"
+  }
+}
